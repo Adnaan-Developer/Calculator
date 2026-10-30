@@ -24,10 +24,6 @@ A responsive and interactive calculator built using **React** and **Tailwind CSS
 - **Lucide React** – Icons
 - **Vite** – Development environment
 
-## 📸 Preview
-
-_Add a screenshot of your calculator here._
-
 ## ⚙️ Getting Started
 
 Follow these steps to run the project locally.
