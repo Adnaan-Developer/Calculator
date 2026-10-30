@@ -1,16 +1,93 @@
-# React + Vite
+# 🧮 Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive calculator built using **React** and **Tailwind CSS**. This project performs basic arithmetic operations with a clean user interface and a simple, user-friendly experience.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- ➕ Addition
+- ➖ Subtraction
+- ✖️ Multiplication
+- ➗ Division
+- 🔢 Decimal number support
+- ⌫ Backspace to delete the last digit
+- 🧹 Clear button to reset the calculator
+- 📱 Responsive design
+- 🎨 Modern UI with Tailwind CSS
+- 🔍 Dynamic display that adjusts text size for long numbers
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **React** – UI development
+- **JavaScript** – Calculator logic
+- **Tailwind CSS** – Styling
+- **Lucide React** – Icons
+- **Vite** – Development environment
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Preview
+
+_Add a screenshot of your calculator here._
+
+## ⚙️ Getting Started
+
+Follow these steps to run the project locally.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Adnaan-Developer/Calculator.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd calculator
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## 📂 Project Structure
+
+```text
+calculator/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+└── README.md
+```
+
+## 🎯 What I Learned
+
+- Managing state using React's `useState` hook.
+- Handling click events in React.
+- Implementing arithmetic operations using JavaScript.
+- Working with conditional rendering and logic.
+- Styling responsive interfaces using Tailwind CSS.
+
+## 👨‍💻 Author
+
+**Adnaan Hussain**
+
+- [GitHub](https://github.com/Adnaan-Developer)
+- [LinkedIn](https://linkedin.com/in/adnaan-hussain-dev/)
+
+---
+
+⭐ If you like this project, consider giving it a star!
