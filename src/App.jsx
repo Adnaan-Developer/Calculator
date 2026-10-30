@@ -6,9 +6,7 @@ const App = () => {
   const [symbol, setSymbol] = useState("");
   const [firstNumber, setfirstNumber] = useState("0");
   const [history, setHistory] = useState("");
-
-  console.log("dis", display);
-  console.log("frist", firstNumber);
+  
   return (
     <div className="relative flex min-h-dvh md:min-h-svh justify-center items-center text-white bg-[url('/bg.jpg')] bg-cover bg-center ">
       <div className="bg-black/80 inset-0 absolute"></div>
@@ -35,13 +33,13 @@ const App = () => {
         <div className="grid grid-cols-4 gap-2 md:text-5xl text-4xl font-bold">
           <button
             onClick={() => setDisplay(display * display * display)}
-            className="bg-[#333] hover:bg-[#444] cursor-pointer py-4 flex justify-center items-center rounded-xl"
+            className="bg-[#333] hover:bg-[#444] cursor-pointer py-2 md:py-4 flex justify-center items-center rounded-xl"
           >
             <Box size={44} strokeWidth={3} />
           </button>
           <button
             onClick={() => setDisplay(display * display)}
-            className="bg-[#333] hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             Sqr
           </button>
@@ -52,7 +50,7 @@ const App = () => {
               setDisplay("0");
               setHistory("");
             }}
-            className="bg-[#333] hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             C
           </button>
@@ -60,7 +58,7 @@ const App = () => {
             onClick={() => {
               setDisplay(display.length > 1 ? display.slice(0, -1) : "0");
             }}
-            className="bg-cyan-600 hover:bg-cyan-800 flex justify-center items-center cursor-pointer py-4 rounded-xl"
+            className="bg-cyan-600 hover:bg-cyan-800 flex justify-center items-center cursor-pointer py-2 md:py-4 rounded-xl"
           >
             <p className="rounded-full bg-white text-cyan-600">
               <X size={44} strokeWidth={3} />
@@ -68,19 +66,19 @@ const App = () => {
           </button>
           <button
             onClick={() => setDisplay(display === "0" ? "7" : display + "7")}
-            className="bg-[#333] hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             7
           </button>
           <button
             onClick={() => setDisplay(display === "0" ? "8" : display + "8")}
-            className="bg-[#333] hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             8
           </button>
           <button
             onClick={() => setDisplay(display === "0" ? "9" : display + "9")}
-            className="bg-[#333] hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             9
           </button>
@@ -90,25 +88,25 @@ const App = () => {
               setfirstNumber(display);
               setDisplay("0");
             }}
-            className="bg-[#333] flex justify-center items-center hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] flex justify-center items-center hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             <Plus size={44} strokeWidth={3} />
           </button>
           <button
             onClick={() => setDisplay(display === "0" ? "4" : display + "4")}
-            className="bg-[#333] hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             4
           </button>
           <button
             onClick={() => setDisplay(display === "0" ? "5" : display + "5")}
-            className="bg-[#333] hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             5
           </button>
           <button
             onClick={() => setDisplay(display === "0" ? "6" : display + "6")}
-            className="bg-[#333] hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             6
           </button>
@@ -118,25 +116,25 @@ const App = () => {
               setfirstNumber(display);
               setDisplay("0");
             }}
-            className="bg-[#333] hover:bg-[#444] flex justify-center items-center cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] flex justify-center items-center cursor-pointer py-2 md:py-4 rounded-xl"
           >
             <Minus size={44} strokeWidth={3} />
           </button>
           <button
             onClick={() => setDisplay(display === "0" ? "3" : display + "3")}
-            className="bg-[#333] hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             3
           </button>
           <button
             onClick={() => setDisplay(display === "0" ? "2" : display + "2")}
-            className="bg-[#333] hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             2
           </button>
           <button
             onClick={() => setDisplay(display === "0" ? "1" : display + "1")}
-            className="bg-[#333] hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             1
           </button>
@@ -146,7 +144,7 @@ const App = () => {
               setfirstNumber(display);
               setDisplay("0");
             }}
-            className="bg-[#333] flex justify-center items-center hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] flex justify-center items-center hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             <X size={44} strokeWidth={3} />
           </button>
@@ -156,13 +154,13 @@ const App = () => {
                 setDisplay(display + ".");
               }
             }}
-            className="bg-[#333] hover:bg-[#444] flex justify-center items-center cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] flex justify-center items-center cursor-pointer py-2 md:py-4 rounded-xl"
           >
             <Dot size={44} strokeWidth={3} />
           </button>
           <button
             onClick={() => setDisplay(display === "0" ? "0" : display + "0")}
-            className="bg-[#333] hover:bg-[#444] cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
             0
           </button>
@@ -172,7 +170,7 @@ const App = () => {
               setfirstNumber(display);
               setDisplay("0");
             }}
-            className="bg-[#333] hover:bg-[#444] flex justify-center items-center cursor-pointer py-4 rounded-xl"
+            className="bg-[#333] hover:bg-[#444] flex justify-center items-center cursor-pointer py-2 md:py-4 rounded-xl"
           >
             <Divide size={44} />
           </button>
@@ -200,7 +198,7 @@ const App = () => {
                 }
               }
             }}
-            className="bg-cyan-600 hover:bg-cyan-800 flex justify-center items-center cursor-pointer py-4 rounded-xl"
+            className="bg-cyan-600 hover:bg-cyan-800 flex justify-center items-center cursor-pointer py-2 md:py-4 rounded-xl"
           >
             <Equal size={44} strokeWidth={3} />
           </button>
