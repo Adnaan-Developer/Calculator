@@ -14,10 +14,7 @@ const App = () => {
         <h2 className="font-bold md:text-6xl">Calculator</h2>
         <div className="md:h-50 md:w-130 w-80 rounded-xl flex flex-col justify-end p-4 overflow-auto scrollbar-none">
           <p
-            style={{
-              fontSize: `${Math.max(1.5, 4.5 - display.length * 0.15)}rem`,
-            }}
-            className="text-right text-gray-400 text-4xl"
+            className="text-right text-gray-400 text-2xl md:text-4xl"
           >
             {history}
           </p>
