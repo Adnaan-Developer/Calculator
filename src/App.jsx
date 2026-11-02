@@ -84,6 +84,7 @@ const App = () => {
               setSymbol("+");
               setfirstNumber(display);
               setDisplay("0");
+              setHistory(display + " +")
             }}
             className="bg-[#333] flex justify-center items-center hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
@@ -112,6 +113,7 @@ const App = () => {
               setSymbol("-");
               setfirstNumber(display);
               setDisplay("0");
+              setHistory(display + " -")
             }}
             className="bg-[#333] hover:bg-[#444] flex justify-center items-center cursor-pointer py-2 md:py-4 rounded-xl"
           >
@@ -140,6 +142,7 @@ const App = () => {
               setSymbol("X");
               setfirstNumber(display);
               setDisplay("0");
+              setHistory(display + " X")
             }}
             className="bg-[#333] flex justify-center items-center hover:bg-[#444] cursor-pointer py-2 md:py-4 rounded-xl"
           >
@@ -166,6 +169,7 @@ const App = () => {
               setSymbol("/");
               setfirstNumber(display);
               setDisplay("0");
+              setHistory(display + " /")
             }}
             className="bg-[#333] hover:bg-[#444] flex justify-center items-center cursor-pointer py-2 md:py-4 rounded-xl"
           >
